@@ -1,0 +1,127 @@
+.vertical-text {
+    @media #{$medium-up} {
+        transform: rotate(-90deg);
+    }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.2);
+    border: 2px solid $color-background-main;
+    // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.leadership-team {
+    position: relative;
+
+    .unsorted {
+        background: $color-background-main;
+        padding: 10px 10px 0;
+        border: 1px solid $color-borders-main;
+        height: 130px;
+        overflow: auto;
+        margin-bottom: 25px;
+    }
+}
+
+.main .medium-11 {
+    @media #{$medium-up} {
+        padding-left: 55px;
+    }
+}
+
+.vertical-text {
+    h2 {
+        border: 1px solid $color-borders-left-labels;
+        border-top-left-radius: $main-unit-corner-radius;
+        border-top-right-radius: $main-unit-corner-radius;
+        padding: 10px;
+        margin-bottom: -1px;
+
+        @extend %left-column-text;
+
+        @media #{$medium-up} {
+            width: 130px;
+            position: absolute;
+            right: 50%;
+        }
+
+    }
+}
+
+.rating-grid {
+    position: relative;
+}
+
+.arrows ul {
+    @extend .no-bullet;
+    li {
+        display: inline-block;
+        position: absolute;
+        right: 0
+    }
+    :first-child {
+        right: 270px;
+    }
+    :last-child {
+        left: 0;
+    }
+}
+
+table.potential {
+    position: absolute;
+    left: -20px;
+    tbody{
+        background: none;
+        border: none;
+        @extend %left-column-text;
+
+        tr {
+            background: none !important;
+            height: 120px;
+        }
+
+        td.vertical-text {
+            padding: 0;
+        }
+    }
+}
+
+.arrows {
+    border: 1px solid $color-borders-left-labels;
+    width: 100%;
+    position: relative;
+
+    &:before, &:after {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:before {
+        border-bottom-color: $color-borders-left-labels;
+        border-width: 30px;
+        margin-left: -30px;
+    }
+
+    &:after {
+        border-bottom-color: white;
+        border-width: 28px;
+        margin-left: -28px;
+
+    }
+
+    .medium-1 & {
+        margin-left: 20px;
+        height: 400px;
+    }
+}

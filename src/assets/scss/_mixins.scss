@@ -1,0 +1,13 @@
+// HOVER ACTION MIXIN
+@mixin hoverActiveFocus($property, $value) {
+    &:hover, &:active, &:focus {
+        #{$property}: $value;
+    }
+}
+
+
+// New button color
+@mixin buttonColor($color) {
+    background: $color;
+    @include hoverActiveFocus(background, darken($color, 2));
+}

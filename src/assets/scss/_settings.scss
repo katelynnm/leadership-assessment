@@ -49,7 +49,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: $color-dark-blue-grey,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -233,14 +233,14 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 14px 21px;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-background: $color-background-main;
+$button-background-hover: scale-color($button-background, $lightness: -7%);
+$button-color: $color-dark-blue-grey;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: $radius-main-unit-corner;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -559,7 +559,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: transparent;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

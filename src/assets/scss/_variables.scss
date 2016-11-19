@@ -3,6 +3,8 @@ $color-pale-blue: #F2F6F9;
 $color-pale-yellow: #EFE829;
 $color-dark-blue-grey: #5D6771;
 $color-medium-blue-grey: #8994A0;
+$color-light-grey: #e1e1e1;
+$color-medium-grey: #ccc;
 
 // Utility Colors
 $color-table-headings: #949EA9;
@@ -19,7 +21,10 @@ $color-background-main: $color-pale-blue;
 // Fonts
 $font-main: "Gotham", Helvetica, Arial, sans-serif;
 
-
+// Icons
+$icon-arrow: "▶";
+$icon-hamburger: "☰";
+$icon-hamburger: url("../img/hamburger-nav.svg");
 
 // Rounding
-$main-unit-corner-radius: 30px;
+$radius-main-unit-corner: 30px;

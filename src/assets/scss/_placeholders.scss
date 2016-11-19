@@ -1,7 +1,10 @@
-%left-column-text {
-    font-size: 17px;
-    line-height: 1.15;
-    font-weight: bold;
-    text-align: center;
-    color: $color-borders-left-labels;
+
+
+%tag-base {
+    font-size: .73rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 4px 7px 0;
+    padding: 2px 7px 0;
+    border-radius: 8px;
 }

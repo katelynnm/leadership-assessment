@@ -1,8 +1,69 @@
-nav {
-    margin-bottom: 2rem;
-}
+.top-bar {
+    .top-bar-right {
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 92%;
 
-.top-bar-right {
-    text-transform: uppercase;
-    font-weight: 500;
+        li.active {
+            font-size: 1.85rem;
+            float: left;
+            padding-left: 0;
+            padding-right: 2rem;
+            margin-left: 1rem;
+            border-top: 1px solid $color-borders-left-labels;
+            border-right: 1px solid $color-borders-left-labels;
+            border-top-right-radius: $radius-main-unit-corner;
+
+            a {
+                background: transparent;
+                color: $color-dark-blue-grey;
+                padding-left: 0;
+            }
+        }
+
+        li:not(.active) {
+            font-size: 1.2rem;
+            float: left;
+            border-bottom: 1px solid $color-borders-left-labels;
+
+            a {
+                color: $color-medium-blue-grey;
+
+                &:after {
+                    content: $icon-arrow;
+                    font-size: 1rem;
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .top-bar-left {
+        width: 70px;
+
+        > ul > li > a {
+            padding-top: 0;
+        }
+
+        .menu-selector {
+            border: 1px solid $color-borders-left-labels;
+            border-bottom-left-radius: $radius-main-unit-corner;
+            background: $icon-hamburger;
+            width: 59px;
+            height: 43px;
+            background-size: 78%;
+            background-repeat: no-repeat;
+            background-position: left 7px top 7px;
+
+        }
+    }
+
+    .logo {
+        background-image: url("../img/gbg-logo.png");
+        background-size: contain;
+        width: 219px;
+        height: 39px;
+        float: right;
+    }
 }

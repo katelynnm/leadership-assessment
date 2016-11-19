@@ -2,13 +2,9 @@ ul.names {
     @extend .no-bullet;
 
     li {
-        font-size: .73rem;
-        font-weight: 500;
-        display: inline-block;
-        margin: 0 4px 7px 0;
-        padding: 2px 7px 0;
+        @extend %tag-base;
         background: $color-name-background;
         border: 1px solid $color-borders-main;
-        border-radius: 8px;
+        cursor: pointer;
     }
 }

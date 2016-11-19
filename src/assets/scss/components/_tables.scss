@@ -1,0 +1,75 @@
+// table.potential {
+//     position: absolute;
+//     left: -20px;
+//     tbody{
+//         background: none;
+//         border: none;
+//         @extend %left-column-text;
+//
+//         tr {
+//             background: none !important;
+//             height: 120px;
+//         }
+//
+//         td.vertical-text {
+//             padding: 0;
+//         }
+//     }
+// }
+
+.table-row-content table {
+    // border-collapse: separate;
+    // border-spacing: 22px 0;
+    background: $color-background-main;
+    // background: linear-gradient(to right,
+    //     $color-background-main 0%,
+    //     $color-background-main 33.5%,
+    //     $color-borders-main 33.5%,
+    //     $color-borders-main 33.6%,
+    //     $color-background-main 33.6%,
+    //     $color-background-main 66.7%,
+    //     $color-borders-main 66.7%,
+    //     $color-borders-main 67%,
+    //     $color-background-main 67%,
+    //     $color-background-main 100%)
+    // ;
+
+    td {
+        @media #{$medium-up} {
+            width: 33%;
+
+            &:not(:last-child) {
+                border-right: 1px solid $color-borders-main;
+            }
+        }
+    }
+
+    tbody {
+        border-bottom: 1px solid $color-borders-main;
+
+        tr {
+            @media #{$medium-up} {
+                height: 200px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    tbody tr:first-of-type td{
+        border-bottom: 1px solid $color-borders-main
+    }
+
+    thead, tfoot {
+        th {
+            text-align: center;
+            font-size: 15px;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.at-a-glance {
+    border-top-right-radius: $radius-main-unit-corner;
+    border: 1px solid $color-borders-sidebar;
+}
+
+ul.filters {
+    @extend .no-bullet;
+    margin-top: 7px;
+
+    li {
+        @extend %tag-base;
+        background: $color-light-grey;
+        border: 1px solid $color-medium-grey;
+    }
+}
+
+.individual-wysiwyg {
+    border: 1px solid $color-yellow-highlight;
+
+    .button {
+        background: white;
+
+        @include hoverActiveFocus(background, $color-pale-yellow);
+    }
+}
+
+.person-details {
+    h2, h3 {
+        color: $color-dark-blue-grey;
+    }
+    h3:last-of-type {
+        margin-bottom: 33px;
+    }
+}
+
+.proceed {
+    .button {
+        padding: 25px 15px;
+        width: 100%;
+
+        &:after {
+            content: $icon-arrow;
+            font-size: 1rem;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}

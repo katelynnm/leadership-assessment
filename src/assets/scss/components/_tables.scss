@@ -1,75 +1,130 @@
-// table.potential {
-//     position: absolute;
-//     left: -20px;
-//     tbody{
-//         background: none;
-//         border: none;
-//         @extend %left-column-text;
-//
-//         tr {
-//             background: none !important;
-//             height: 120px;
-//         }
-//
-//         td.vertical-text {
-//             padding: 0;
-//         }
-//     }
-// }
-
-.table-row-content table {
-    // border-collapse: separate;
-    // border-spacing: 22px 0;
+.table-row-content .sorting-table {
+    z-index: 2;
+    padding: 10px;
     background: $color-background-main;
-    // background: linear-gradient(to right,
-    //     $color-background-main 0%,
-    //     $color-background-main 33.5%,
-    //     $color-borders-main 33.5%,
-    //     $color-borders-main 33.6%,
-    //     $color-background-main 33.6%,
-    //     $color-background-main 66.7%,
-    //     $color-borders-main 66.7%,
-    //     $color-borders-main 67%,
-    //     $color-background-main 67%,
-    //     $color-background-main 100%)
-    // ;
+
+    h3 {
+        color: $color-medium-dark-grey;
+        font-weight: bold;
+        position: relative;
+        background: $color-background-main;
+    }
+
+    @media #{$medium-up} {
+        .columns.medium-4:not(:first-of-type) {
+            border-left: 1px solid $color-borders-main;
+
+            h3 {
+                padding-left: 10px;
+                text-align: center;
+                border-left: 1px solid $color-background-main;
+                margin-left: -1px;
+            }
+        }
+
+        .columns.medium-4:last-of-type h3{
+            text-align: right;
+        }
+    }
+
+    .row {
+        ul {
+            height: 22vh;
+
+            @media #{$medium-up} {
+                margin: 10px;
+            }
+        }
+
+        &:first-of-type {
+            ul, h3 {
+                border-bottom: 1px solid $color-borders-main;
+            }
+
+            @media #{$medium-up} {
+                h3:after {
+                    border-bottom: 10px solid $color-background-main;
+                    top: 11px;
+                    left: 2px;
+                    content: "";
+                    position: inherit;
+                    display: block;
+                }
+            }
+        }
+
+        &:last-of-type {
+            @media #{$medium-up} {
+                display: block;
+                position: relative;
+
+                h3 {
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 33.33%;
+                    border-top: 1px solid $color-borders-main;
+
+                    &:before {
+                        border-top: 10px solid $color-background-main;
+                        top: -11px;
+                        right: 11px;
+                        content: "";
+                        position: relative;
+                        display: block;
+                        width: 1px;
+                    }
+                }
+
+                ul {
+                    margin-bottom: 32px;
+                    margin-top: 3px;
+                }
+
+                .columns.medium-4:first-of-type {
+                    h3:before {
+                        width: 0px;
+                    }
+
+                }
+            }
+            @media #{$small-only} {
+                h3 {
+                    border-bottom: 1px solid $color-borders-main;
+                }
+            }
+        }
+    }
+
+    .columns.medium-4{
+        ul {
+            overflow-y: scroll;
+        }
+
+        @media #{$medium-up} {
+            &:first-of-type ul{
+                margin-left: 0;
+            }
+
+            &:last-of-type ul{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+table.mini-matrix {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 3px;
 
     td {
-        @media #{$medium-up} {
-            width: 33%;
+        background: $color-light-grey;
+        height: 12px;
+        padding: 0;
 
-            &:not(:last-child) {
-                border-right: 1px solid $color-borders-main;
-            }
-        }
-    }
-
-    tbody {
-        border-bottom: 1px solid $color-borders-main;
-
-        tr {
-            @media #{$medium-up} {
-                height: 200px;
-                vertical-align: top;
-            }
-        }
-    }
-
-    tbody tr:first-of-type td{
-        border-bottom: 1px solid $color-borders-main
-    }
-
-    thead, tfoot {
-        th {
-            text-align: center;
-            font-size: 15px;
-
-            &:first-child {
-                text-align: left;
-            }
-            &:last-child {
-                text-align: right;
-            }
+        &.selected {
+            background: $color-yellow-highlight;
         }
     }
 }

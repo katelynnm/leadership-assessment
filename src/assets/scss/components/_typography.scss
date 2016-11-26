@@ -42,3 +42,45 @@ select, input {
     margin: 0;
     line-height: 1;
 }
+
+
+.aside h3 {
+    font-size: .65rem;
+    margin-bottom: 0;
+}
+
+.person-name, .person-title {
+    font-weight: 500;
+    line-height: 1;
+}
+
+.icon-info {
+    background: $color-borders-main;
+    color: $color-background-main;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1;
+    font-size: .7rem;
+    font-weight: bold;
+    padding: 4px 7px 2px;
+    transition: .1s ease-in all;
+    margin-left: 7px;
+    width: 18px;
+
+    &:before {
+        content: "i";
+    }
+
+    [tooltip] & {
+        &:hover:before {
+            content: "x";
+        }
+
+        &:hover {
+            padding: 4px 4px 2px 5px;
+            background: rgba($color-borders-main, .75);
+        }
+    }
+}

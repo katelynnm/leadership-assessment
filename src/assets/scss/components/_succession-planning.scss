@@ -1,0 +1,55 @@
+.succession-chart {
+    position: relative;
+
+    &:after {
+        width: 20px;
+        height: 90%;
+        background: linear-gradient(to left, white, transparent);
+        position: absolute;
+        display: block;
+        right: 14px;
+        top: 46px;
+        content: "";
+    }
+}
+
+.chart-toolbar {
+    border-top-left-radius: $radius-main-unit-corner;
+    padding: 10px 5px;
+    margin-bottom: 14px;
+
+    .medium-12 & {
+        border-top-right-radius: $radius-main-unit-corner;
+    }
+
+    div.left, input, label, select, .button {
+        width: auto;
+        display: inline-block;
+        font-weight: 700;
+        color: $color-dark-blue-grey;
+    }
+
+    #print-options {
+        margin-left: 11px;
+    }
+}
+
+.hierarchy {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.scroll-x {
+    width: 2000px;
+}
+
+
+ul.successors {
+    @extend .no-bullet;
+    li {
+        display: inline-block;
+    }
+    h4 {
+        font-size: .8rem;
+    }
+}

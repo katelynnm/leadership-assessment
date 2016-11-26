@@ -8,3 +8,140 @@ ul.names {
         cursor: pointer;
     }
 }
+
+
+.vertical-hierarchy {
+    ul {
+        @extend .no-bullet;
+
+        li .person {
+            background: $color-background-main;
+            border: 1px solid $color-borders-left-labels;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            z-index: 13;
+            width: 160px;
+        }
+        li li .person {
+            // width: 100%;
+        }
+    }
+
+    > ul {
+        float: left;
+        margin-right: 40px;
+        position: relative;
+
+        &:before {
+            content: "";
+            border-left: 1px solid $color-borders-left-labels;
+            height: 13px;
+            position: absolute;
+            top: -2px;
+            left: 15px;
+        }
+
+        ul.direct-reports {
+            padding-left: 15px;
+            border-left: 1px solid $color-borders-left-labels;
+            margin: 0 0 20px 15px;
+            width: auto;
+            z-index: 19;
+
+            > li {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    border-top: 1px solid $color-borders-left-labels;
+                    width: 15px;
+                    position: absolute;
+                    left: -15px;
+                    bottom: 50%;
+                }
+
+                &:last-child:before {
+                    background: white;
+                    width: 16px;
+                    height: 50%;
+                    z-index: 20;
+                    left: -16px;
+                    bottom: 0;
+                }
+            }
+        }
+        ul.replacement {
+            display: inline-block;
+            margin-left: 50px;
+            vertical-align: text-bottom;
+
+            li {
+                background: $color-background-main;
+                border: 1px solid $color-borders-left-labels;
+                border-radius: $radius-tags;
+                padding: 4px 8px 2px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    border-top: 1px dashed $color-borders-left-labels;
+                    width: 100%;
+                    left: -100%;
+                    bottom: 50%;
+                    z-index: -1;
+                }
+
+                .replacement-status {
+                    background: white;
+                    border: 1px solid $color-medium-blue-grey;
+                    margin-left: 2px;
+                    padding: 1px 2px 0;
+                    color: $color-medium-dark-grey;
+                    font-weight: 900;
+                    font-family: $font-ultra;
+
+                    &:last-child {
+                        border-bottom-right-radius: 7px;
+                        border-top-right-radius: 7px;
+                        padding-right: 5px;
+                        margin-right: -6px;
+                    }
+                    &:first-child:not(:last-child) {
+                        border-bottom-left-radius: 7px;
+                        border-top-left-radius: 7px;
+                        padding-left: 5px;
+                    }
+                    &:first-child:last-child{
+                        float: right;
+                        margin-top: -2px;
+                    }
+                    &:first-child{
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+
+            &.multiple {
+                vertical-align: middle;
+            }
+        }
+
+        &.root-level > li > ul.replacement{
+            margin-left: 81px;
+        }
+    }
+
+    .person-name {
+        font-size: .8rem;
+        margin-bottom: 6px;
+    }
+
+}
+
+.person-title {
+    font-size: .65rem;
+    margin-bottom: 0;
+}

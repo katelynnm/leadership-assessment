@@ -1,0 +1,20 @@
+.select-inline {
+    width: auto;
+    display: inline-block;
+    float: right;
+
+}
+
+h3.successors {
+    display: inline-block;
+    // width: 40%;
+
+    float: left;
+}
+
+.successors li {
+    background: $white;
+    border: 1px solid $color-borders-sidebar;
+    padding: 2px 10px;
+    border-radius: $radius-tags;
+}

@@ -11,3 +11,31 @@ a.button + a.button-text-only {
     display: inline-block;
     vertical-align: super;
 }
+
+#percent-complete, .chart-toolbar .button {
+    border: 1px solid $color-light-grey;
+}
+
+.chart-toolbar .button {
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin: 0 11px;
+    @include buttonColor(white);
+
+    &.up-level:before {
+        content: $icon-arrow-up;
+        margin: 0 3px 0 -3px;
+    }
+    &.down-level:after {
+        content: $icon-arrow-down;
+        margin: 0 0 0 3px;
+    }
+
+    &:first-of-type {
+        margin-right: 0;
+    }
+    &:last-of-type {
+        margin-left: 1px;
+    }
+}

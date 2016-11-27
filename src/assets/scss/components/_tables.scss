@@ -8,15 +8,38 @@
         font-weight: bold;
         position: relative;
         background: $color-background-main;
+
+        @media screen and (max-width: 1040px) and (min-width: 1011px) {
+            font-size: 1.1vw;
+
+            .icon-info {
+            }
+        }
+        @media #{$medium-only} {
+            font-size: 1.2vw;
+            white-space: nowrap;
+            background: none;
+
+            .icon-info {
+                margin-left: 0;
+                padding: 3px 5px 2px;
+                width: auto;
+                font-size: 1vw;
+
+                &:hover {
+                    padding-left: 4px;
+                    padding-right: 3px;
+                }
+            }
+        }
     }
 
-    @media #{$medium-up} {
+    @media #{$large-up} {
         .columns.medium-4:not(:first-of-type) {
             border-left: 1px solid $color-borders-main;
 
             h3 {
                 padding-left: 10px;
-                text-align: center;
                 border-left: 1px solid $color-background-main;
                 margin-left: -1px;
             }
@@ -33,6 +56,10 @@
 
             @media #{$medium-up} {
                 margin: 10px;
+            }
+
+            @media #{$medium-only} {
+                border-right: 1px solid $color-borders-main;
             }
         }
 
@@ -101,13 +128,27 @@
             overflow-y: scroll;
         }
 
-        @media #{$medium-up} {
-            &:first-of-type ul{
+        h3 {
+            text-align: center;
+        }
+    }
+
+    @media #{$medium-up} {
+        .columns.medium-4:first-of-type {
+            ul{
                 margin-left: 0;
             }
+            h3 {
+                text-align: left;
+            }
+        }
 
-            &:last-of-type ul{
+        .columns.medium-4:last-of-type {
+            ul{
                 margin-right: 0;
+            }
+            h3 {
+                text-align: right;
             }
         }
     }

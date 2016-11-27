@@ -24,6 +24,14 @@ ul.filters {
     }
 }
 
+.icon-print:before {
+    content: $icon-printer;
+    display: block;
+    float: right;
+    vertical-align: middle;
+    margin-top: 9px;
+}
+
 .person-details {
     h2, h3 {
         color: $color-dark-blue-grey;

@@ -1,10 +1,14 @@
-
+.no-bullet {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
 %tag-base {
     font-size: .73rem;
     font-weight: 500;
     display: inline-block;
     margin: 0 4px 7px 0;
-    padding: 2px 7px 0;
-    border-radius: 8px;
+    padding: 3px 7px 2px;
+    border-radius: $radius-tags;
 }

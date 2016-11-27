@@ -1,0 +1,49 @@
+.replacement-status {
+
+    &:before {
+        background: $color-background-main;
+        margin-left: -74px;
+        font-family: $font-main;
+        color: $color-dark-blue-grey;
+
+        .root-level > li > .replacement &{
+            top: 34px;
+            bottom: inherit;
+            z-index: 2002;
+        }
+    }
+    &:after {
+        border-top-color: $color-background-main;
+        margin-left: -1px;
+        margin-top: -36px;
+
+        .root-level > li > .replacement &{
+            margin-top: 3px;
+            z-index: 2003;
+            transform: rotate(180deg);
+        }
+    }
+    &.ds:before {
+        content: "DS";
+    }
+    &.l:before  {
+        content: "This successor is Ready Later, which indicates that he/she could be prepared within 12 months.";
+    }
+    &.ext:before  {
+        content: "This successor is found outside the company and would need to be hired and placed.";
+    }
+    &.st:before  {
+        content: "St";
+    }
+    &.rs:before  {
+        content: "Resting Star — Demonstrated high potential in the past but is struggling in producing results.";
+    }
+    &.n:before {
+    }
+    &.kc:before {
+    }
+    &.ic:before {
+    }
+    &.sc:before {
+    }
+}

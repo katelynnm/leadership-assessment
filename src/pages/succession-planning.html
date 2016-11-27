@@ -1,6 +1,7 @@
-{{>navigation}}
+{{>navigation-succession}}
 
 <div class="row">
+    <!-- NOTE: .main starts as .medium-12 .large-12 and the .aside isn't there. The column structure changes once a name is clicked on, then the sidebar opens up -->
     <div class="medium-8 large-9 columns main">
         <div class="succession-chart">
             <div class="row chart-toolbar">
@@ -24,259 +25,263 @@
                     </select>
                 </div>
             </div>
-            <div class="row hierarchy">
-                <!-- TODO: Not sure how to make the width be exactly what is necessary for the browser -->
-                <div class="columns scroll-x">
+            <div class="row white-gradient-cover">
+                <div class="hierarchy">
+                    <div class="columns scroll-x">
 
-                    <div class="vertical-hierarchy">
-                        <ul class="root-level">
-                            <li>
-                                <div class="person">
-                                    <p class="person-name">Sarah Hale</p>
-                                    <p class="person-title">Executive Vice President</p>
-                                </div>
-
-                                <ul class="replacement">
-                                    <li class="person-name">Jane Smith <span class="replacement-status">DS</span><span class="replacement-status">N</span></li>
-                                </ul>
-
-                                <ul class="direct-reports">
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">Dennis Raj</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-
-                                        <ul class="replacement">
-                                            <li class="person-name">James Rogers <span class="replacement-status">L</span></li>
-                                        </ul>
-
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Lawrence Teneo</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-
-                                        <ul class="replacement">
-                                            <li class="person-name">Rachel Fogg <span class="replacement-status">Ext.</span></li>
-                                        </ul>
-
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Cynthia Sung</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-
-                                        <ul class="replacement multiple">
-                                            <li class="person-name">John Alexander <span class="replacement-status">ST</span><span class="replacement-status">N</span></li>
-                                            <li class="person-name">Abby Springfield <span class="replacement-status">L</span></li>
-                                        </ul>
-
-
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Robert Tusk</p>
-                                            <p class="person-title">Managing Director</p>
-                                        </div>
-
-                                        <ul class="replacement">
-                                            <li class="person-name">Rob Lawrence <span class="replacement-status">RS</span><span class="replacement-status">N</span></li>
-                                        </ul>
-
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="vertical-hierarchy">
-                        <ul class="root-level">
-                            <li>
-                                <div class="person">
-                                    <p class="person-name">Lexi Goldstein</p>
-                                    <p class="person-title">Executive Vice President</p>
-                                </div>
-
-                                <ul class="direct-reports">
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">Leslie Pernac</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Anthony Wilhelm</p>
-                                            <p class="person-title">Executive Director</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Brian Faust</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Shiro Tanaka</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">Lori MacLelland</p>
-                                            <p class="person-title">Executive Director</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Desmond Wessler</p>
-                                            <p class="person-title">Senior Vice Presdient</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">Gabby Riggio-Natale</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Al Welks</p>
-                                            <p class="person-title">Executive Director</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="vertical-hierarchy">
-                        <ul class="root-level">
-                            <li>
-                                <div class="person">
-                                    <p class="person-name">James Foy</p>
-                                    <p class="person-title">Executive Vice President</p>
-                                </div>
-
-                                <ul class="direct-reports">
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">Stephanie Longo</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Timothy Phillips</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Sarah Pendleton</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Geoff Leonard</p>
-                                            <p class="person-title">Managing Director</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="vertical-hierarchy">
-                        <ul class="root-level">
-                            <li>
-                                <div class="person">
-                                    <p class="person-name">Richard Ellerton</p>
-                                    <p class="person-title">Executive Vice President</p>
-                                </div>
-
-                                <ul class="direct-reports">
-                                    <li>
-                                        <div class="person">
-
-                                            <p class="person-name">David Fin</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Jarun Aishwarya</p>
-                                            <p class="person-title">Executive Director</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">William Ellend</p>
-                                            <p class="person-title">Senior Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Charles Peck</p>
-                                            <p class="person-title">Vice President</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="person">
-                                            <p class="person-name">Cindy O'Shea</p>
-                                            <p class="person-title">Executive Director</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="vertical-hierarchy">
-                    <ul class="root-level">
-                        <li>
-                            <div class="person">
-                                <p class="person-name">Sarah Hale</p>
-                                <p class="person-title">Executive Vice President</p>
-                            </div>
-
-                            <ul class="direct-reports">
+                        <div class="vertical-hierarchy">
+                            <!-- NOTE: when replacements have been added to anyone from the .root-level, the class "replacements-added" should be added — it adjusts the width of the elements -->
+                            <ul class="root-level replacements-added">
                                 <li>
                                     <div class="person">
+                                        <p class="person-name">Sarah Hale</p>
+                                        <p class="person-title">Executive Vice President</p>
+                                    </div>
 
-                                        <p class="person-name">Dennis Raj</p>
-                                        <p class="person-title">Senior Vice President</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="person">
-                                        <p class="person-name">Lawrence Teneo</p>
-                                        <p class="person-title">Vice President</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="person">
-                                        <p class="person-name">Cynthia Sung</p>
-                                        <p class="person-title">Senior Vice President</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="person">
-                                        <p class="person-name">Robert Tusk</p>
-                                        <p class="person-title">Managing Director</p>
-                                    </div>
+                                    <ul class="replacement">
+                                        <li class="person-name">Jane Smith <span class="replacement-status ds" tooltip>DS</span><span class="replacement-status n" tooltip="Resting Star — Demonstrated high potential">N</span></li>
+                                    </ul>
+
+                                    <ul class="direct-reports">
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Dennis Raj</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+
+                                            <ul class="replacement">
+                                                <li class="person-name">James Rogers <span class="replacement-status l" tooltip>L</span></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Lawrence Teneo</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+
+                                            <ul class="replacement">
+                                                <li class="person-name">Rachel Fogg <span class="replacement-status ext" tooltip>Ext.</span></li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Cynthia Sung</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+
+                                            <!-- NOTE: If multiple replacements get added, the class of .multiple needs to get added to ul.replacement -->
+                                            <ul class="replacement multiple">
+                                                <li class="person-name">John Alexander <span class="replacement-status st" tooltip>ST</span><span class="replacement-status n" tooltip="Resting Star — Demonstrated high potential">N</span></li>
+                                                <li class="person-name">Abby Springfield <span class="replacement-status l" tooltip>L</span></li>
+                                            </ul>
+
+
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Robert Tusk</p>
+                                                <p class="person-title">Managing Director</p>
+                                            </div>
+
+                                            <ul class="replacement">
+                                                <li class="person-name">Rob Lawrence <span class="replacement-status rs" tooltip>RS</span><span class="replacement-status n" tooltip>N</span></li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="vertical-hierarchy">
+                            <ul class="root-level">
+                                <li>
+                                    <div class="person">
+                                        <p class="person-name">Lexi Goldstein</p>
+                                        <p class="person-title">Executive Vice President</p>
+                                    </div>
+
+                                    <ul class="direct-reports">
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Leslie Pernac</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Anthony Wilhelm</p>
+                                                <p class="person-title">Executive Director</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Brian Faust</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Shiro Tanaka</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Lori MacLelland</p>
+                                                <p class="person-title">Executive Director</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Desmond Wessler</p>
+                                                <p class="person-title">Senior Vice Presdient</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Gabby Riggio-Natale</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Al Welks</p>
+                                                <p class="person-title">Executive Director</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vertical-hierarchy">
+                            <ul class="root-level">
+                                <li>
+                                    <div class="person">
+                                        <p class="person-name">James Foy</p>
+                                        <p class="person-title">Executive Vice President</p>
+                                    </div>
+
+                                    <ul class="direct-reports">
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Stephanie Longo</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Timothy Phillips</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Sarah Pendleton</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Geoff Leonard</p>
+                                                <p class="person-title">Managing Director</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vertical-hierarchy">
+                            <ul class="root-level">
+                                <li>
+                                    <div class="person">
+                                        <p class="person-name">Richard Ellerton</p>
+                                        <p class="person-title">Executive Vice President</p>
+                                    </div>
+
+                                    <ul class="direct-reports">
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">David Fin</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Jarun Aishwarya</p>
+                                                <p class="person-title">Executive Director</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">William Ellend</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Charles Peck</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Cindy O'Shea</p>
+                                                <p class="person-title">Executive Director</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="vertical-hierarchy">
+                            <ul class="root-level">
+                                <li>
+                                    <div class="person">
+                                        <p class="person-name">Sarah Hale</p>
+                                        <p class="person-title">Executive Vice President</p>
+                                    </div>
+
+                                    <ul class="direct-reports">
+                                        <li>
+                                            <div class="person">
+
+                                                <p class="person-name">Dennis Raj</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Lawrence Teneo</p>
+                                                <p class="person-title">Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Cynthia Sung</p>
+                                                <p class="person-title">Senior Vice President</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="person">
+                                                <p class="person-name">Robert Tusk</p>
+                                                <p class="person-title">Managing Director</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -289,18 +294,19 @@
                     <h3 class="manager">Reports to: Sarah Hale</h3>
                 </div>
                 <div class="columns small-5">
+                    <!-- NOTE: .selected is added to the cell in the matrix that corresponds to their status — and its commonplace name is printed in the h3#person-status -->
                     <h3 id="person-status">Developing Star</h3>
                     <table class="mini-matrix">
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td class="selected"></td>
-                                <td></td>
+                                <td id="matrix-resting-star"></td>
+                                <td id="matrix-developing-star" class="selected"></td>
+                                <td id="matrix-star-talent"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td id="matrix-inconsistent-contributor"></td>
+                                <td id="matrix-solid-contributor"></td>
+                                <td id="matrix-key-contributor"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -309,13 +315,13 @@
             </div>
             <div class="row">
                 <div class="columns">
-                    <h3 class="successors">Successor(s):</h3>
+                    <h3 class="select-inline">Successor(s):</h3>
                     <select class="select-inline" name="">
                         <option disabled selected value="Type or select a name…">Type or select a name…</option>
                     </select>
                     <ul class="successors">
                         <li>
-                            <div class="row">
+                            <div class="row collapse">
                                 <div class="columns small-7">
                                     <h4>John Alexander</h4>
                                     <p class="person-title">Senior Director</p>
@@ -328,20 +334,33 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            <div class="row collapse">
+                                <div class="columns small-7">
+                                    <h4>Abigale Springfield</h4>
+                                    <p class="person-title">Director</p>
+                                </div>
+                                <div class="columns small-5">
+                                    <select class="select-inline" name="">
+                                        <option value="now">Ready now</option>
+                                        <option selected value="now">Ready later</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
+                <!-- NOTE: we need to add the selected wysiwyg editor here -->
                 <div class="columns wysiwyg">
                     <textarea name="name" rows="8" cols="40"></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="columns small-10">
+                <div class="columns">
                     <a href="" class="button">Save</a>
                     <a href="" class="button-text-only">Cancel</a>
-                </div>
-                <div class="columns small-2">
                     <a href="" class="icon-print"></a>
                 </div>
             </div>
@@ -349,167 +368,10 @@
 
         <div class="row proceed">
             <div class="columns">
-                <a href="" class="button">Return to <br>Leadership Assessment</a>
+                <a href="" class="button">Return to Leadership Assessment&nbsp;▶</a>
             </div>
         </div>
 
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 medium-4 medium-push-2 columns">
-                    <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-                </div>
-                <div class="large-4 medium-4 medium-pull-2 columns">
-                    <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-                </div>
-            </div>
-        </div>
-
-
-<div class="row">
-    <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-    <!--    <div class="row">
-            <div class="large-12 columns">
-                <div class="primary callout">
-                    <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 medium-6 columns">
-                <div class="primary callout">
-                    <p>Six columns</p>
-                </div>
-            </div>
-            <div class="large-6 medium-6 columns">
-                <div class="primary callout">
-                    <p>Six columns</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-12.columns" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <div class="row collapse">
-                        <label>Input Label</label>
-                        <div class="input-group">
-                            <input class="input-group-field" type="text" placeholder="input-group" />
-                            <span class="input-group-label">.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Select Box</label>
-                    <select>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-6 medium-6 columns">
-                    <label>Choose Your Favorite</label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-                </div>
-                <div class="large-6 medium-6 columns">
-                    <label>Check these out</label>
-                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Textarea Label</label>
-                    <textarea placeholder="small-12.columns"></textarea>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-            <a href="#" class="medium success button">Success Btn</a><br/>
-            <a href="#" class="medium alert button">Alert Btn</a><br/>
-            <a href="#" class="medium secondary button">Secondary Btn</a></p>
-            <div class="callout">
-                <h5>So many components, girl!</h5>
-                <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-                <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-            </div>
-        </div>
-    </div> -->

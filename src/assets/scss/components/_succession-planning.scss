@@ -1,14 +1,21 @@
 .succession-chart {
+    margin-left: 40px;
+}
+
+.white-gradient-cover {
     position: relative;
+    height: 85vh;
+    min-height: 496px;
+    overflow-y: scroll;
 
     &:after {
-        width: 20px;
-        height: 90%;
+        width: 40px;
+        height: 100%;
         background: linear-gradient(to left, white, transparent);
         position: absolute;
         display: block;
-        right: 14px;
-        top: 46px;
+        right: 0;
+        top: 0;
         content: "";
     }
 }
@@ -25,8 +32,7 @@
     div.left, input, label, select, .button {
         width: auto;
         display: inline-block;
-        font-weight: 700;
-        color: $color-dark-blue-grey;
+        color: $color-medium-blue-grey;
     }
 
     #print-options {
@@ -40,7 +46,7 @@
 }
 
 .scroll-x {
-    width: 2000px;
+    white-space: nowrap;
 }
 
 
@@ -51,5 +57,8 @@ ul.successors {
     }
     h4 {
         font-size: .8rem;
+        margin-bottom: 0;
+        font-weight: 800;
+        color: $color-medium-blue-grey;
     }
 }

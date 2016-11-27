@@ -6,11 +6,26 @@ ul.names {
         background: $color-name-background;
         border: 1px solid $color-borders-main;
         cursor: pointer;
+        line-height: 1.1;
+
+        &:hover, &:active, &:focus {
+            background: lighten($color-yellow-highlight, 28);
+        }
+
+        &.selected {
+            background: $color-yellow-highlight;
+        }
     }
 }
 
 
 .vertical-hierarchy {
+
+    @media #{$medium-up} {
+        display: inline-block;
+        vertical-align: top;
+    }
+
     ul {
         @extend .no-bullet;
 
@@ -29,7 +44,6 @@ ul.names {
     }
 
     > ul {
-        float: left;
         margin-right: 40px;
         position: relative;
 
@@ -65,11 +79,14 @@ ul.names {
                     background: white;
                     width: 16px;
                     height: 50%;
-                    z-index: 20;
                     left: -16px;
                     bottom: 0;
                 }
             }
+        }
+
+        &:not(.replacements-added) ul.direct-reports > li > .person:last-child {
+            width: 100%;
         }
         ul.replacement {
             display: inline-block;

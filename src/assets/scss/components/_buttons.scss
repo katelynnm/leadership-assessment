@@ -3,13 +3,17 @@
     border: 1px solid $color-pale-yellow;
 }
 
-
+a.button-text-only:hover {
+    text-decoration: none;
+    color: darken($color-dark-blue-grey, 30);
+    transition: .2s ease all;
+}
 a.button + a.button-text-only {
     padding: 10px;
     margin-top: 0;
     line-height: 1;
     display: inline-block;
-    vertical-align: super;
+    vertical-align: baseline;
 }
 
 #percent-complete, .chart-toolbar .button {

@@ -12,3 +12,11 @@
     padding: 3px 7px 2px;
     border-radius: $radius-tags;
 }
+
+%hamburger-menu-icon {
+    border: 1px solid $color-borders-left-labels;
+    border-bottom-left-radius: $radius-main-unit-corner;
+    width: 59px;
+    height: 43px;
+    background-size: 78%;
+}

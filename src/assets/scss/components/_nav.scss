@@ -4,7 +4,7 @@
     .small-9 {
         text-transform: uppercase;
         font-weight: 500;
-        padding-left: 19px;
+        // padding-left: 19px;
     }
 
     .small-1 {
@@ -13,21 +13,14 @@
         > ul > li > a {
             padding-top: 0;
         }
+    }
 
-        .menu-selector {
-            border: 1px solid $color-borders-left-labels;
-            border-bottom-left-radius: $radius-main-unit-corner;
-            background: $icon-hamburger;
-            width: 59px;
-            height: 43px;
-            background-size: 78%;
-            background-repeat: no-repeat;
-            background-position: left 7px top 7px;
-
-            &:hover {
-                background: $icon-nav-x 20px 7px no-repeat;
-                transition: .3s ease all;
-            }
+    .medium-11 {
+        @media #{$medium-only} {
+            width: 86%;
+            padding-left: 3px;
+            float: left !important;
+            margin-left: 2.4vw;
         }
     }
 
@@ -35,6 +28,17 @@
         max-width: 19%;
         float: right;
         margin-top: 13px;
+        background: url("../img/gbg-logo.png") 0 0 no-repeat;
+        background-size: contain;
+        width: 250px;
+        height: 70px;
+
+        @media #{$medium-only} {
+            background: url("../img/gbg-logo-icon.jpg") 0 0 no-repeat;
+            width: 41px;
+            height: 41px;
+            max-width: 10%;
+        }
 
         @media #{$small-only} {
             max-width: 80%;
@@ -49,6 +53,17 @@
         width: 75%;
         display: inline-block;
         white-space: nowrap;
+
+        @media #{$large-only} {
+            margin-left: 1vw;
+        }
+        @media #{$xlarge-up} {
+            margin-left: .3vw;
+        }
+
+        @media #{$medium-only} {
+            width: calc(100% - 60px);
+        }
 
         a {
             padding: 0;
@@ -96,7 +111,7 @@
         li:not(.active) {
             width: 37%;
             font-size: 1.6vw;
-            border-bottom: 1px solid $color-borders-left-labels;
+            // border-bottom: 1px solid $color-borders-left-labels;
             position: relative;
             height: 40px;
             padding: 18px 0;
@@ -124,6 +139,17 @@
 
             }
 
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                left: -3px;
+
+                right: -3px;
+                height: 1px;
+                background-image: linear-gradient(to right, $color-borders-left-labels, transparent);
+            }
+
 
             @media #{$large-up} {
                 font-size: 1.2rem;
@@ -140,7 +166,6 @@
                     @media #{$large-up} {
                         font-size: 1rem;
                         padding: 0 10px 17px 32px;
-                        border-bottom: 1px solid $color-borders-left-labels;
                         margin-left: -25px;
                     }
                 }
@@ -149,34 +174,105 @@
     }
 }
 
-.is-dropdown-submenu-item {
-    background: white;
-    width: auto;
-    transition: .16s ease-in all;
-
-    &:hover {
-        background: $color-yellow-highlight;
-    }
-
-    &:nth-of-type(n+1) {
-        border-top: 1px solid $color-light-grey;
-    }
-}
-
-.dropdown.menu > li.opens-right > .is-dropdown-submenu {
-    left: 84px;
-    top: 0;
-    width: 240px;
-}
-
 .dropdown.menu > li.is-dropdown-submenu-parent > a:after {
     border: none;
-}
-
-ul.menu.vertical.submenu.is-dropdown-submenu.first-sub.js-dropdown-active {
-    box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
 }
 
 .menu-icon {
     padding-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    z-index: 2000;
+
+    &#menu-selector {
+        @extend %hamburger-menu-icon;
+        background: $icon-hamburger 7px 7px no-repeat;
+
+        @media #{$medium-only} {
+            margin-left: -.5vw;
+        }
+
+        @media screen and (min-width: 640px) and (max-width: 840px) {
+            margin-left: -1vw;
+        }
+
+    }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:focus {
+    // background: $icon-nav-x 20px 7px no-repeat;
+    transition: .3s ease all;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: calc(2vw - 10px);
+    margin-top: 3px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    top: 0;
+    left: 120%;
+    box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+    transition: .16s ease-in all;
+    z-index: 1999;
+
+    li {
+        &:hover {
+            background: $color-yellow-highlight;
+        }
+
+        &:nth-of-type(n+1) {
+            border-top: 1px solid $color-light-grey;
+        }
+    }
+}
+
+#myDropdown.show {
+    &:before, &:after {
+        content: "";
+        @extend %hamburger-menu-icon;
+        position: absolute;
+        top: 0;
+        display: block;
+        left: -71px;
+
+        @media #{$medium-only} {
+            left: -69px;
+        }
+    }
+    &:after {
+        background: $icon-nav-x 18px 7px no-repeat;
+        background-size: 45% !important;
+    }
+
+    &:before {
+        background-color: white !important;
+        border: 1px solid $color-borders-left-labels;
+    }
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

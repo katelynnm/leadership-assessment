@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>tooltip-info</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,5.29817708 C6.30525,5.29817708 5.742625,4.74809375 5.742625,4.07073958 C5.742625,3.39253125 6.30525,2.84244792 7,2.84244792 C7.69475,2.84244792 8.257375,3.39253125 8.257375,4.07073958 C8.257375,4.74809375 7.69475,5.29817708 7,5.29817708 L7,5.29817708 Z M5.851125,11.4370729 L8.148,11.4370729 L8.148,6.47265625 L5.851125,6.47265625 L5.851125,11.4370729 Z M7,0.333760417 C3.13425,0.333760417 0,3.39253125 0,7.16709375 C0,10.9408021 3.13425,14.0004271 7,14.0004271 C10.86575,14.0004271 14,10.9408021 14,7.16709375 C14,3.39253125 10.86575,0.333760417 7,0.333760417 L7,0.333760417 Z" id="tooltip-info" fill="#8994A0"></path>
+    </g>
+</svg>

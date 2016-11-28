@@ -20,4 +20,9 @@
 select {
     font-weight: 700;
     color: $color-medium-blue-grey;
+    margin-bottom: 5px;
+
+    &.select-inline {
+        float: right;
+    }
 }

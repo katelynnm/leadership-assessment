@@ -3,7 +3,6 @@
 // custom imports
 @import "fonts";
 @import "variables";
-@import "placeholders";
 @import "mixins";
 
 
@@ -57,4 +56,5 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import "main"
+@import "main";
+@import "placeholders";

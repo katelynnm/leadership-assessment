@@ -92,6 +92,7 @@ ul.names {
             display: inline-block;
             margin-left: 50px;
             vertical-align: text-bottom;
+            width: 180px;
 
             li {
                 background: $color-background-main;
@@ -110,11 +111,18 @@ ul.names {
                     z-index: -1;
                 }
 
+                .stati{
+                    position: absolute;
+                    top: 1px;
+                    right: 7px;
+                }
+
                 .replacement-status {
                     background: white;
                     border: 1px solid $color-medium-blue-grey;
                     margin-left: 2px;
-                    padding: 1px 2px 0;
+                    line-height: 1;
+                    padding: 2px 2px 0;
                     color: $color-medium-dark-grey;
                     font-weight: 900;
                     font-family: $font-ultra;
@@ -129,10 +137,6 @@ ul.names {
                         border-bottom-left-radius: 7px;
                         border-top-left-radius: 7px;
                         padding-left: 5px;
-                    }
-                    &:first-child:last-child{
-                        float: right;
-                        margin-top: -2px;
                     }
                     &:first-child{
                         margin-left: 10px;

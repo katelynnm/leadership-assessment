@@ -56,6 +56,18 @@ ul.filters {
 
 .individual-wysiwyg  {
     border: 1px solid $color-borders-sidebar;
+    height: calc(44vh + 110px);
+    position: relative;
+
+    .button-unit {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+    textarea {
+        height: 60%;
+    }
 }
 .individual-wysiwyg.activated, #sp-sidebar  {
     border: 1px solid $color-yellow-highlight;

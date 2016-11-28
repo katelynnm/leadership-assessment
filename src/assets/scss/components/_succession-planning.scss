@@ -1,12 +1,13 @@
 .succession-chart {
-    margin-left: 40px;
+    margin-left: 2vw;
+    margin-right: 1vw;
 }
 
-.white-gradient-cover {
+body:not(.gecko) .white-gradient-cover {
     position: relative;
-    height: 85vh;
+    // height: 85vh;
     min-height: 496px;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
     &:after {
         width: 40px;

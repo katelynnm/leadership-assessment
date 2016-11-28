@@ -88,7 +88,7 @@
 
         .vertical-text table {
             position: absolute;
-            width: 55vh;
+            width: calc(44vh + 70px);
             right: 43px;
             height: 42px;
             top: 8px;
@@ -99,8 +99,7 @@
 
             td {
                 width: 33%;
-                padding: 13px;
-                padding-left: 20px;
+                padding: 16px 0;
 
                 @media #{$medium-only} {
                     padding: 5px 13px;
@@ -108,11 +107,6 @@
 
                 h2 {
                     margin: 0 10%;
-                }
-
-                &:last-of-type h2 {
-                    float: right;
-
                 }
             }
         }
@@ -127,6 +121,7 @@ table.arrows {
         &:before, &:after {
             content: url("../img/arrow-point.svg");
             position: absolute;
+            width: 18px;
         }
 
         &:before {
@@ -146,6 +141,7 @@ table.arrows {
             right: -17px;
             transform: rotate(180deg);
             bottom: -9px;
+            top: -14px;
 
             @media #{$medium-only} {
                 .vertical-text &{
@@ -215,6 +211,7 @@ table.arrows {
 
     h2 {
         text-align: center;
+        display: block;
     }
 }
 
@@ -226,6 +223,8 @@ table.arrows {
     display: inline-block;
     vertical-align: middle;
     padding: 1px;
+    margin-bottom: 5px;
+
 
     .succession-chart & {
         width: 150px;
@@ -238,5 +237,6 @@ table.arrows {
         font-size: .8rem;
         font-weight: bold;
         color: $color-medium-blue-grey;
+        padding: 2px;
     }
 }
